@@ -1,0 +1,72 @@
+/* Register.css */
+
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+  }
+  
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  .card-header {
+    background-color: #6c757d;
+    /* color: rgb(221, 203, 203); */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .nav-tabs .nav-link {
+    color: rgb(247, 140, 98);
+  }
+  
+  .nav-tabs .nav-link.active {
+    background-color: #343a40;
+    border: none;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .form-control {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .btn-primary {
+    background-color: #343a40;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #495057;
+  }
+  
+  .alert {
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .tab-content {
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      margin: 1rem;
+    }
+  }
+  

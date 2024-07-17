@@ -1,0 +1,329 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+  align-items: stretch;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  background-color: #390b43;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar .nav-link {
+  color: #ebe6e6;
+  font-size: 1.1rem;
+  margin: 10px 0;
+  transition: background-color 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  /* color: #f74712; */
+  color: #f77f5b;
+  border-radius: 5px;
+}
+
+/* Main content styles */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.main-content header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.main-content .navbar-brand {
+  margin-right: 0;
+}
+
+.main-content .navbar .dropdown-toggle {
+  background: none;
+  border: none;
+}
+
+/* Card styles */
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* transition: transform 0.3s; */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.graph-container {
+  margin-top: 20px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}
+.button-add-product {
+  background-color: #8b3e9c !important;
+  color: #ffffff !important;
+  border: none !important;
+  margin-right: 10px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.button-add-product:hover {
+  color: #f77f5b !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.button-add-product:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.button-add-product1 {
+  background-color: #ffffff00 !important;
+  color: #bfafaf !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.button-add-product1:hover {
+  background-color: #ffffff !important;
+  color: #f36d6d !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 50% !important;
+}
+
+.button-add-product1:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.button-add-product2 {
+  background-color: #ffffff00 !important;
+  color: #f0e4e4 !important;
+  border: none !important;
+}
+.button-add-product2:hover {
+  color: #f66e6e !important;
+  border: none !important;
+}
+
+.button-add-product3 {
+  background-color: #8b3e9c !important;
+  color: #ffffff !important;
+  border: none !important;
+  margin-right: 10px;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 100px !important;
+}
+
+.button-add-product3:hover {
+  color: #f77f5b !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 50% !important;
+}
+
+.button-add-product3:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Table styles */
+.table {
+  margin-top: 20px;
+}
+
+/* Modal styles */
+.modal-content {
+  background-color: #f8f9fa;
+}
+
+/* AdminTable.css */
+
+/* Styling the table header */
+.admin-table thead th {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  /* text-align: center; */
+}
+
+/* Styling table rows */
+/* .admin-table tbody td {
+  text-align: center;
+} */
+
+/* Styling buttons */
+/* .button-add-product,
+    .button-add-product1 {
+      margin-right: 10px;
+    } */
+
+/* Styling hover effect on buttons */
+/* .button-add-product:hover,
+    .button-add-product1:hover {
+      opacity: 0.8; 
+    } */
+button.save {
+  border-radius: 20px;
+  width: 100px;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  background-color: #8b3e9c !important;
+  color: white;
+  border: none !important;
+}
+
+button.save:hover {
+  /* background-color: #388e3c; */
+  color: #f77f5b !important;
+}
+
+button.cancel {
+  border-radius: 20px;
+  width: 100px;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  background-color: #fc8a8a !important;
+  color: #ffffff !important;
+  border: none;
+}
+
+button.cancel:hover {
+  background-color: #f77f5b  !important;
+}
+
+.status-active {
+  color: green !important;
+  font-weight: bold;
+}
+
+.status-inactive {
+  color: grey !important;
+  font-weight: bold;
+}
+
+.status-pending {
+  color: rgb(234, 75, 47) !important;
+  font-weight: bold;
+}
+
+.status-returned {
+  color: rgb(146, 29, 209) !important;
+  font-weight: bold;
+}
+
+
+/* modal-for-view */
+.modal-header {
+  background-color: #563d7c;
+  color: white;
+  border-bottom: 1px solid #dee2e6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Title */
+.modal-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Modal Body */
+.modal-body {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Product Details */
+.modal-body div {
+  padding: 0.5rem 0;
+}
+
+.modal-body p {
+  margin: 0.5rem 0;
+}
+
+.modal-body strong {
+  color: #563d7c;
+}
+
+/* Modal Footer */
+.modal-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard.css */
+/* Dashboard.css */
+.logo-image {
+  /* filter: brightness(0) saturate(100%) invert(7%) sepia(100%) saturate(1000%) hue-rotate(230deg) brightness(50%) contrast(150%); */
+/* background-color: #dee2e6; */
+/* font-size: 90px; */
+/* color :rgb(243, 237, 237) */
+/* text-align: left; */
+}
+
+
+/* Ensure proper alignment and spacing for form components */
+.form-row {
+  margin-bottom: 15px; /* Adjust margin between rows */
+}
+
+.form-col {
+  margin-bottom: 15px; /* Adjust margin between columns */
+}
+
+/* Ensure labels and inputs are properly aligned */
+.form-label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Adjust margin below labels */
+}
+
+/* Adjust button alignment */
+.form-button-col {
+  display: flex;
+  align-items: flex-end;
+}
