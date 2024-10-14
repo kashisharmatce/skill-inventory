@@ -68,7 +68,7 @@ const ProductTable = ({ products, updateProductsList }) => {
       }
 
       const response = await axios.put(
-        `https://inventory1-0bkk.onrender.com/storage/${currentProduct._id}`,
+        `http://localhost:8080/storage/${currentProduct._id}`,
         currentProduct,
         {
           headers: {

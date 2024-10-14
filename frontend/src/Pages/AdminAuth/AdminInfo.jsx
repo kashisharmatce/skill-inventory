@@ -38,7 +38,7 @@ const AdminInfo = () => {
     }
   
     try {
-      const response = await axios.get("https://inventory1-0bkk.onrender.com/admin", {
+      const response = await axios.get("http://localhost:8080/admin", {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `${token}`

@@ -9,7 +9,7 @@ const MyInfo = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get('https://inventory1-0bkk.onrender.com/admin', {
+        const response = await axios.get('http://localhost:8080/admin', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }

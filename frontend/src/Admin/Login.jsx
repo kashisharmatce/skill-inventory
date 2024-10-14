@@ -120,7 +120,7 @@ const Login = ({ onLogin }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://inventory1-0bkk.onrender.com/admin/login', {
+      const response = await fetch('http://localhost:8080/admin/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

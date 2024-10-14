@@ -175,7 +175,7 @@ const Register = () => {
   const handleRegisterSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://inventory1-0bkk.onrender.com/admin/register', formData);
+      await axios.post('http://localhost:8080/admin/register', formData);
       setMessage('Admin registered successfully');
       setError('');
       setTimeout(() => {
@@ -190,7 +190,7 @@ const Register = () => {
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://inventory1-0bkk.onrender.com/admin/login', {
+      const response = await fetch('http://localhost:8080/admin/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

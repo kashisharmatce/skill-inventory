@@ -117,7 +117,7 @@ const Inventory = () => {
       formData.append("adminId", localStorage.getItem("adminId"));
 
       const response = await axios.post(
-        "https://inventory1-0bkk.onrender.com/storage",
+        "http://localhost:8080/storage",
         formData,
         {
           headers: {

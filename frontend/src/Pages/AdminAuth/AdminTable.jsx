@@ -26,7 +26,7 @@ const AdminTable = ({ adminData }) => {
         return;
       }
 
-      const response = await axios.delete(`https://inventory1-0bkk.onrender.com/admin/${id}`, {
+      const response = await axios.delete(`http://localhost:8080/admin/${id}`, {
         headers: {
           Authorization: `${token}`,
           "Content-Type": "application/json",
