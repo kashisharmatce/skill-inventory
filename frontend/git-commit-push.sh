@@ -72,7 +72,7 @@ commit_and_push() {
 check_current_login  # Show current login status and wait for user to continue
 
 # Login with personal account, commit and push
-login_to_github "$GIT_USER_NAME" "$COMPANY_EMAIL"
-# login_to_github "$GIT_USER_NAME" "$PERSONAL_EMAIL"
+# login_to_github "$GIT_USER_NAME" "$COMPANY_EMAIL"
+login_to_github "$GIT_USER_NAME" "$PERSONAL_EMAIL"
 commit_and_push
 # Login with company account, no commit or push
